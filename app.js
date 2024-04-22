@@ -14,9 +14,7 @@ app.get("/",(req, res) => {
     res.send("Hi, I am live !!");
 });
 
-app.get("/api/bodyWorkout", (req,res)=>{
-    res.send(products_routes);
-});
+app.use("/api/bodyWorkout", products_routes);
 
 const start = async() =>{
     try {
