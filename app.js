@@ -15,7 +15,7 @@ app.get("/",(req, res) => {
 });
 
 app.get("/api/bodyWorkout", (req,res)=>{
-    res.send(products_routes)
+    res.send(products_routes);
 });
 
 const start = async() =>{
